@@ -96,7 +96,7 @@ score_asexpr(){
 	knownIGs
 
 	expr(){
-		rm ${Name}.score_asexpr_genes.txt ${Name}.score_asexpr_transposableElements.txt
+		:>${Name}.score_asexpr_genes.txt;:>${Name}.score_asexpr_transposableElements.txt
 		nTotal=$(cat ${Name}.bed | wc -l)
 		gStage=$(cat ${ASExprDir}/Expr_genes.promoter.txt | awk 'BEGIN{FS=OFS="\t"}{print NF/2-2}' | sort -u)
 		tStage=$(cat ${ASExprDir}/Expr_transposableElements.promoter.txt | awk 'BEGIN{FS=OFS="\t"}{print NF/2-2}' | sort -u)
@@ -156,7 +156,7 @@ score_regu(){
 	# File format of Zfp57motif.methyl.txt:
 	# Chrom	Start	End	M_mat	M_pat	M_mat	M_pat ...
 	asMethylZfp57Motif(){
-		rm ${Name}.score_regu_asMethylZfp57Motif.txt
+		:>${Name}.score_regu_asMethylZfp57Motif.txt
 		Stage=$(cat ${ReguDir}/Zfp57motif.methyl.txt | awk 'BEGIN{FS=OFS="\t"}{print (NF-3)/2}' | sort -u)
 		nTotal=$(cat ${Name}.bed | wc -l)
 		for nRow in $(seq 1 ${nTotal})
