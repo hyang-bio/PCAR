@@ -71,8 +71,9 @@ do
 done
 
 
-# step-1. check whether version of ChromHMM.jar 
-ChromHMMs=$(locate ChromHMM/ChromHMM.jar)
+# step-1. check whether version of ChromHMM.jar is higher than v1.22
+locate ChromHMM/ChromHMM.jar > ChromHMMs.temp && find ~ -name "ChromHMM.jar" >> ChromHMMs.temp
+ChromHMMs=$(cat ChromHMMs.temp) && rm ChromHMMs.temp
 ChromHMM_PATH=
 for chromhmm in ${ChromHMMs}
 do
