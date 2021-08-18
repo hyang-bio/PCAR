@@ -22,7 +22,7 @@ PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal an
  ```shell
  $ unzip PCAR-main.zip
  $ cd PCAR-main
- $ chmod +x pcar mcall scoreasr pcar_getCpGnumberMultipleTs.py pcar_averageMethylInRegionMultipleThreads.sh methyl_processing.py
+ $ chmod +x pcar callchm scoreasr pcar_getCpGnumberMultipleTs.py pcar_averageMethylInRegionMultipleThreads.sh methyl_processing.py
  ```
  
 - Export path of PCAR suite to environment
