@@ -4,7 +4,7 @@
 ![Figure1](Schema.png?⁩raw=True "Title")
 ## Overview
 
-PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal and DNA methylation level (CHM) and scoring the allele-specific regulatory foles based on the features of known imprinting control regions (ICRs). Please contact (1810550@tongji.edu.cn) if you have any questions or suggestions.
+PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal and DNA methylation level (CHM) and scoring the allele-specific regulatory foles based on the features of known imprinting control regions (ICRs). Please contact Hui Yang(1810550@tongji.edu.cn) if you have any questions or suggestions.
 
 ## Installation
 
