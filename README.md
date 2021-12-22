@@ -1,10 +1,10 @@
 ## PCAR: a computational <u>P</u>ipeline for calling <u>C</u>HM and scoring the <u>A</u>llele-specific <u>R</u>egulatory roles
 
 **| [Overview](#overview) | [Installation](#installation) | [Usage](#usage)  | [Module: callchm](#module-callchm) | [Module: scoreasr](#module-scoreasr) | [Test data and examples of operation](#test-data-and-examples-of-operation) |**
-![Figure1](Figure/Schema.png?⁩raw=True "Title")
+![Figure1](Schema.png?⁩raw=True "Title")
 ## Overview
 
-PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal and DNA methylation level (CHM) and scoring the allele-specific regulatory foles based on the features of known imprinting control regions (ICRs). Please contact (1810550@tongji.edu.cn) if you have any questions or suggestions.
+PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal and DNA methylation level (CHM) and scoring the allele-specific regulatory foles based on the features of known imprinting control regions (ICRs). Please contact Hui Yang(1810550@tongji.edu.cn) if you have any questions or suggestions.
 
 ## Installation
 
@@ -48,7 +48,7 @@ $ pcar -m <callchm|scoreasr> [options]
         -h, --help -- help information
 ```
 
-## Module: callchm
+## Module *callchm* : CHM calling based on DNA methylation and H3K9me3
 
 
 ```shell
@@ -66,7 +66,7 @@ Options:
 -O, --outdir OUTDIR     If specified all output files will be written to that directory. Default: the currenting working directory.
 ```
 
-## Module: scoreasr
+## Module *scoreasr* : scoring allele-specific regulatory potential
 
 ```shell
 $ pcar -m scoreasr [options]
