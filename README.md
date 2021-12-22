@@ -48,7 +48,7 @@ $ pcar -m <callchm|scoreasr> [options]
         -h, --help -- help information
 ```
 
-## Module: callchm
+## Module *callchm* : CHM calling based on DNA methylation and H3K9me3
 
 
 ```shell
@@ -66,7 +66,7 @@ Options:
 -O, --outdir OUTDIR     If specified all output files will be written to that directory. Default: the currenting working directory.
 ```
 
-## Module: scoreasr
+## Module *scoreasr* : scoring allele-specific regulatory potential
 
 ```shell
 $ pcar -m scoreasr [options]
