@@ -1,5 +1,7 @@
 ## PCAR: a computational <u>P</u>ipeline for calling <u>C</u>HM and scoring the <u>A</u>llele-specific <u>R</u>egulatory roles
 
+![label1](https://img.shields.io/badge/version-v1.1.1-yellow)	![label2](https://img.shields.io/badge/license-MIT-green)
+
 **| [Overview](#overview) | [Installation](#installation) | [Usage](#usage)  | [Module: callchm](#module-callchm) | [Module: scoreasr](#module-scoreasr) | [Test data and examples of operation](#test-data-and-examples-of-operation) |**
 ![Figure1](Schema.png?⁩raw=True "Title")
 ## Overview
