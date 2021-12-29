@@ -2,14 +2,19 @@
 
 ![label1](https://img.shields.io/badge/version-v1.1.1-yellow)	![label2](https://img.shields.io/badge/license-MIT-green)
 
-**| [Overview](#overview) | [Installation](#installation) | [Usage](#usage)  | [Module: callchm](#module-callchm) | [Module: scoreasr](#module-scoreasr) | [Test data and examples of operation](#test-data-and-examples-of-operation) |**
+**| [Overview](#overview) | [Installation](#installation) | [Usage](#usage)  | [Module: callchm](#module-callchm) | [Module: scoreasr](#module-scoreasr) | [Test data and examples of operation](#demo) |**
 ![Figure1](Schema.png?⁩raw=True "Title")
 ## Overview
 
 PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal and DNA methylation level (CHM) and scoring the allele-specific regulatory foles based on the features of known imprinting control regions (ICRs). Please contact Hui Yang(1810550@tongji.edu.cn) if you have any questions or suggestions.
 
 ## Installation
-
+- System requirements
+  This pipeline has been tested on *Linux* operating systems:
+  Linux: Ubuntu 16.04
+  RAM: 380 GB
+  CPU: 40 cores, 2.40 GHz/core
+  
 - Software used
 
 	- [ChromHMM (v1.22)](http://compbio.mit.edu/ChromHMM) A software for learning and characterization chromatin states.
@@ -42,6 +47,7 @@ $ export PATH=${pcarPATH}:${PATH}
 $ which pcar
 "/YOUR_PATH_TO_PCAR/PCAR-main/pcar"
 ```
+The pipeline take approximately 30 seconds to install.
 
 ## Usage
 
@@ -81,7 +87,7 @@ Options:
 -O, --outdir OutDir     If specified all output files will be written to that directory. 
 ```
 
-## Test data and examples of operation
+## Demo
 We provided two small [test datasets](https://github.com/hyang-bio/PCAR/tree/main/Test) (mouse in mm10) for users to test PCAR: [Test_callchm](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm) containing data in mouse chr19 for calling CHM, while [Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr) containing data needed for scoring the Allele-specific Regulatory roles. 
 
 ### Running callchm module
@@ -89,6 +95,7 @@ We provided two small [test datasets](https://github.com/hyang-bio/PCAR/tree/mai
 $ pcar -m callchm -H Test/Test_callchm/Test.H3K9me3.rmDup.bam -M Test/Test_callchm/Test.sam.G.bed -Z Test/Test_callchm/Test.chrom.sizes -Q Test/Test_callchm/Test.2bit -T 6 -N Test
 ```
 The CHMs identified are saved in the Test.CHM.bed.
+The pipeline take approximately 2 minutes for callchm based on *Test data*.
 
 ### Running scoreasr module
 ##### File preparation
@@ -131,3 +138,5 @@ $ pcar -m scoreasr -I Test/Test_scoreasr/Epi.txt -R Test/Test_scoreasr -U Test/T
 ```
 
 The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively.
+
+The pipeline take approximately 6 minutes for scoreasr based on *Test data*.
