@@ -48,7 +48,7 @@ $ export PATH=${pcarPATH}:${PATH}
 $ which pcar
 "/YOUR_PATH_TO_PCAR/PCAR-main/pcar"
 ```
-The installation takes approximately 30 seconds.
+The installation takes approximately 30 seconds based on system above.
 
 ## Usage
 
@@ -95,7 +95,7 @@ We provided two small [test datasets](https://github.com/hyang-bio/PCAR/tree/mai
 ```shell
 $ pcar -m callchm -H Test/Test_callchm/Test.H3K9me3.rmDup.bam -M Test/Test_callchm/Test.sam.G.bed -Z Test/Test_callchm/Test.chrom.sizes -Q Test/Test_callchm/Test.2bit -T 6 -N Test
 ```
-The CHMs identified are saved in the Test.CHM.bed. *callchm* based on *[Test_callchm](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm)* takes approximately 2 minutes.
+The CHMs identified are saved in the Test.CHM.bed. *callchm* based on *[Test_callchm](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm)* takes approximately 2 minutes based on system above.
 
 ### Running scoreasr module
 ##### File preparation
@@ -137,4 +137,4 @@ The CHMs identified are saved in the Test.CHM.bed. *callchm* based on *[Test_cal
 $ pcar -m scoreasr -I Test/Test_scoreasr/Epi.txt -R Test/Test_scoreasr -U Test/Test_scoreasr -N Test
 ```
 
-The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively. *scoreasr* based on *[Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr)* takes approximately 8 minutes.
+The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively. *scoreasr* based on *[Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr)* takes approximately 8 minutes based on system above.
