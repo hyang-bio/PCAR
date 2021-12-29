@@ -80,7 +80,7 @@ score_asepi(){
 	 BEGIN{FS=OFS="\t";}{\
 	 	SCORE=0;\
 	 	for(i=1;i<=STAGE;i++){SCORE+=score_I($(4*i), $(4*i+1), $(4*i+2), $(4*i+3))};\
-	 	print $1, $2, $3, SCORE, abs(SCORE/STAGE)}' > ${Name}.score_asepi.txt
+	 	print $1, $2, $3, SCORE/STAGE, abs(SCORE/STAGE)}' > ${Name}.score_asepi.txt
 }
 score_asepi
 
