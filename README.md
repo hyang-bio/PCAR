@@ -48,7 +48,7 @@ $ export PATH=${pcarPATH}:${PATH}
 $ which pcar
 "/YOUR_PATH_TO_PCAR/PCAR-main/pcar"
 ```
-The installation takes about 30 seconds.
+The installation takes approximately 30 seconds.
 
 ## Usage
 
