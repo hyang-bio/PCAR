@@ -10,6 +10,7 @@ PCAR was developed for calling CpG-rich genomic loci with high H3K9me3 signal an
 
 ## Installation
 - System requirements
+
   This pipeline has been tested on *Linux* operating systems:
   - Linux: Ubuntu 16.04
   - RAM: 380 GB
