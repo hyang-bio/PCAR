@@ -137,4 +137,4 @@ The CHMs identified are saved in the Test.CHM.bed. *callchm* based on *[Test_cal
 $ pcar -m scoreasr -I Test/Test_scoreasr/Epi.txt -R Test/Test_scoreasr -U Test/Test_scoreasr -N Test
 ```
 
-The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively. *scoreasr* based on *[Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr)* takes approximately 5 minutes.
+The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively. *scoreasr* based on *[Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr)* takes approximately 8 minutes.
