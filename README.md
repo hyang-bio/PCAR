@@ -120,7 +120,7 @@ The CHMs identified are saved in the Test.CHM.bed. *callchm* based on *[Test_cal
 | chr1 | 4495354 | 4499354 | NM_001289464 | 0.00 | 0.00 | 0.00 | 0.00 | ... |
 | chr1 | 4495354 | 4499354 | NM_001289465 | 0.00 | 0.00 | 0.00 | 0.00 | ... |
 
-Note: Transposable element transcripts annotation are assembled in pre-implantation embryos as [Shao et al](https://github.com/wanqingshao/TE_expression_in_scRNAseq) and stored in [mm10_te_tx.gff3](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr/mm10_te_tx.gff3). 
+Note: Transposable element transcripts annotation are assembled in pre-implantation embryos as [Shao et al](https://github.com/wanqingshao/TE_expression_in_scRNAseq) and stored in [mm10_te_tx.gff3](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_scoreasr/mm10_te_tx.gff3). 
 
 * Zfp57motif.methyl.txt containing DNA methylation information of Zfp57 motifs. Format is tab-separated as follows:
 
