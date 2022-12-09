@@ -140,3 +140,6 @@ $ pcar -m scoreasr -I Test/Test_scoreasr/Epi.txt -R Test/Test_scoreasr -U Test/T
 ```
 
 The final score and details for allele-specific regulatory roles are saved in Test.score.txt and associated allele-specific expressed genes and transposable elements could be searched in Test.score_asexpr_genes.txt and Test.score_asexpr_transposableElements.txt respectively. *scoreasr* based on *[Test_scoreasr](https://github.com/hyang-bio/PCAR/tree/main/Test/Test_callchm/Test_scoreasr)* takes approximately 8 minutes based on system above.
+
+# Citation
+Yang H\*, Bai D\*, Li Y\*, Yu Z\*, Wang C, Sheng Y, Liu W$, Gao S$, Zhang Y$. Allele-specific H3K9me3 and DNA methylation co-marked CpG-rich regions serve as potential imprinting control regions in pre-implantation embryo. Nat Cell Biol 2022; 24:783-92.https://www.nature.com/articles/s41556-022-00900-4
